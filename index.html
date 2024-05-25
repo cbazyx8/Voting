@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University CR Elections</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>University CR Elections</h1>
+  </header>
+
+  <main>
+    <!-- Candidate profiles -->
+    <div class="candidate">
+      <img src="saif.jpeg" alt="Candidate 1">
+      <div class="candidate-info">
+        <h3>Saif Ullah</h3>
+      </div>
+    </div>
+    <div class="candidate">
+      <img src="im.jpeg" alt="Candidate 2">
+      <div class="candidate-info">
+        <h3>Waqar AFridi</h3>
+      </div>
+    </div>
+
+    <!-- Voting interface -->
+    <div class="voting-container">
+      <h2>Cast Your Vote</h2>
+      <div class="voting-options">
+        <label><input type="radio" name="vote" value="candidate1"> Candidate 1</label>
+        <label><input type="radio" name="vote" value="candidate2"> Candidate 2</label>
+      </div>
+      <button id="voteBtn">Vote</button>
+    </div>
+
+    <!-- Vote count and result -->
+    <div class="vote-count">
+      <p>Total Votes: <span id="totalVotes">0</span></p>
+      <p>Saif Ullah: <span id="candidate1Votes">0</span> (<span id="candidate1Percentage">0%</span>)</p>
+      <p>Waqar Afridi: <span id="candidate2Votes">0</span> (<span id="candidate2Percentage">0%</span>)</p>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 University CR Elections. Developed by Wahab Khan.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* CSS Grid and Flexbox for layout management */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-image: url('k.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+  }
+  
+  header, footer {
+    background-color: #01204E;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Candidate profiles */
+  .candidate {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 2rem;
+    background-color: #01204E;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .candidate img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .candidate-info h3 {
+    margin-top: 0;
+  }
+  
+  .candidate-info p {
+    margin-bottom: 0;
+  }
+  
+  /* Voting interface */
+  .voting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #028391;
+    color: aliceblue;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .voting-container h2 {
+    margin-bottom: 1rem;
+    
+  }
+  
+  .voting-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .voting-options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .voting-options input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Vote count and result */
+  .vote-count {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #FEAE6F;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vote-count p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .result {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result h3 {
+    margin-top: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .candidate {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .candidate img {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
